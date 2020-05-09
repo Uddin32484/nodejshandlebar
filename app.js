@@ -13,7 +13,7 @@ app.use(exp.static(__dirname + "/public"));
 
 
 //body-parser
-app.use(bodyparser.json());
+app.use(bodyparser.json());// deprecated
 app.use(bodyparser.urlencoded({ extended: false }));
 //Session
 app.use(session({ secret: "secret", resave: true, saveUninitialized: true }));
