@@ -4,7 +4,7 @@
   "description": "demo of express handlerbars bootstarp session handlline body-parser",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "node",
