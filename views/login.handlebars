@@ -17,6 +17,29 @@ body {
 h1 {
 	color:whitesmoke;
 }
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 </style>
 
 
@@ -27,12 +50,14 @@ h1 {
     <input type="text" name="nm" placeholder="Enter your name"></input>
     <button type="submit" value="Sign-IN">Sign-In</button>
     
+   
     </form>-->
-    <div class="container">
-   <Center> <h1>EID MUBARAK</h1></center>
-  
-<center><h1> <iframe width="400" height="300" src="Eidgretting.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h1></center>
+     <div class="video-container">
+  <video>
+    <source src="Eidgretting.mp4" type="video/mp4" />
+  </video>
 </div>
+    
    
    
       
